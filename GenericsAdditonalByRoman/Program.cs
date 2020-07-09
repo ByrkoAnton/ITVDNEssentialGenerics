@@ -9,6 +9,9 @@ namespace GenericsAdditonalByRoman
            Car car = new Car(1,"Car","BMW","X5",60000);
            car.GetProductInfo();
            IProductService productService = new Services(car);
+           IProductService productService2 = new Services.ProductServises(car);
+           Console.WriteLine(productService2.GetProductInfo());
+           
 
            Console.WriteLine(productService.GetProductInfo());
            Product pen = productService.CreateProduct(new Pen(2, "pen", 20, 2, "roller"));
