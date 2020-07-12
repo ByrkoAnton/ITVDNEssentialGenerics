@@ -5,11 +5,12 @@ using System.Text;
 namespace GenericsAdditonalByRoman
 {
     interface IProductService
+
     {
-        string GetProductInfo();
+        Product GetProduct();
         Product CreateProduct(Product prod);
         Product UpdateProduct(Product prod);
-        Product DeleteProduct();
+        string DeleteProduct();
 
     }
 }
